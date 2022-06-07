@@ -96,3 +96,7 @@ const observer = new IntersectionObserver(
 messages.forEach((card) => {
   observer.observe(card);
 });
+
+// ----------------------------------------------------------------------------
+// Set scroll offset for the body because the element heights are changing.
+// ----------------------------------------------------------------------------

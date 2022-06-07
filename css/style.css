@@ -45,7 +45,7 @@ body {
   height: 3px;
   background-color: white;
   transform-origin: left;
-  z-index: 1;
+  z-index: 2;
 }
 .animation-container {
   /* position: relative; */
@@ -78,6 +78,7 @@ img {
   opacity: 0;
   /* transform: translateY(20px); */
   transition: all 0.5s ease-in-out;
+  z-index: 1;
 }
 .card-message.hero {
   top: 40vh;
@@ -86,9 +87,9 @@ img {
   background-color: hsla(205, 25%, 20%, 0.3);
   border-radius: 15px;
 }
-.card-message.hero p {
+.card-message p {
   font-size: 4rem;
-  text-shadow: 3px 3px 10px black;
+  text-shadow: 3px 3px 10px hsla(225, 38%, 16%, 0.8);
 }
 
 .card-message.simple {
@@ -97,8 +98,8 @@ img {
   /* background-color: rgba(255, 255, 255, 0.5); */
   /* border: 1px solid white; */
   border-radius: 10px;
-  font-size: 4rem;
-  text-shadow: 3px 3px 10px hsla(225, 38%, 16%, 0.8);
+  /* font-size: 4rem; */
+  /* text-shadow: 3px 3px 10px hsla(225, 38%, 16%, 0.8); */
 }
 
 .card-message.show {
@@ -113,7 +114,7 @@ img {
   /* border: 1px solid white; */
   border-radius: 10px;
   background-color: hsla(0, 0%, 100%, 0.8);
-  color: hsl(203, 37%, 34%);
+  color: var(--clr-blue-6);
   font-size: 2rem;
   text-decoration: none;
   box-shadow: 0px 3px 10px hsla(0, 0%, 0%, 0.5);
@@ -123,7 +124,7 @@ img {
   box-shadow: 0px 6px 10px hsla(0, 0%, 0%, 0.5);
 }
 .card-message a:active {
-  background-color: hsl(178, 100%, 25%);
+  background-color: var(--clr-blue-6);
   color: white;
 }
 
@@ -167,7 +168,7 @@ img {
 .contact-form-wrapper {
   max-width: 700px;
   margin: 1rem auto;
-  border: 1px solid var(--clr-prim-8);
+  border: 1px solid var(--clr-blue-8);
   border-radius: 7px;
   box-shadow: 0 5px 5px hsla(206, 24%, 11%, 0.5);
   overflow: hidden;
@@ -175,9 +176,9 @@ img {
 .contact-form-wrapper h2 {
   width: 100%;
   padding-block: 2rem;
-  background-color: var(--clr-prim-3);
-  color: var(--clr-prim-8);
-  border-bottom: 1px solid var(--clr-prim-4);
+  background-color: var(--clr-blue-3);
+  color: var(--clr-blue-8);
+  border-bottom: 1px solid var(--clr-blue-4);
   text-align: center;
   font-size: 1.2rem;
 }
@@ -186,8 +187,8 @@ img {
   display: flex;
   flex-flow: column;
   padding-top: 1.5rem;
-  background-color: var(--clr-prim-2);
-  color: var(--clr-prim-8);
+  background-color: var(--clr-blue-2);
+  color: var(--clr-blue-8);
 }
 
 .contact-form div:not(.form-footer) {
@@ -195,10 +196,7 @@ img {
   justify-content: space-between;
   align-items: baseline;
   margin-block: 1rem;
-  padding-inline: 1.5rem;
-  /* align-self: stretch; */
-  /* justify-self: stretch; */
-  /* width: 100%; */
+  padding-inline: 2rem;
 }
 
 .contact-form input {
@@ -206,20 +204,22 @@ img {
   height: 3rem;
   margin-right: 2rem;
   padding-left: 1rem;
-  background-color: var(--clr-prim-1);
-  color: var(--clr-prim-8);
-  border: 1px solid var(--clr-prim-4);
+  background-color: var(--clr-blue-1);
+  color: var(--clr-blue-8);
+  border: 1px solid var(--clr-blue-4);
   border-radius: 5px;
+  box-shadow: 0 1px 1px white;
 }
 .contact-form textarea {
   flex-grow: 1;
   height: 150px;
   margin-right: 2rem;
   padding: 1rem;
-  background-color: var(--clr-prim-1);
-  color: var(--clr-prim-8);
-  border: 1px solid var(--clr-prim-4);
+  background-color: var(--clr-blue-1);
+  color: var(--clr-blue-8);
+  border: 1px solid var(--clr-blue-4);
   border-radius: 5px;
+  box-shadow: 0 1px 1px white;
 }
 
 .contact-form input:focus,
@@ -236,30 +236,31 @@ img {
 }
 .form-footer {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   width: 100%;
   margin-top: 1.5rem;
-  background-color: var(--clr-prim-3);
-  border-top: 1px solid var(--clr-prim-4);
+  background-color: var(--clr-blue-3);
+  border-top: 1px solid var(--clr-blue-4);
 }
 
 .form-button {
   margin: 1.5rem;
+  margin-right: 4rem;
   padding: 0.75rem 4rem;
-  border-bottom: 2px solid var(--clr-prim-8);
+  border-bottom: 4px solid var(--clr-blue-8);
   border-radius: 5px;
-  background-color: var(--clr-prim-6);
-  color: var(--clr-prim-1);
+  background-color: var(--clr-blue-6);
+  color: var(--clr-blue-1);
   transition: all 0.2s;
 }
 .form-button:hover {
-  background-color: var(--clr-prim-7);
-  border-bottom: 2px solid var(--clr-prim-9);
+  background-color: var(--clr-blue-7);
+  border-bottom: 4px solid var(--clr-blue-9);
 }
 .form-button:active {
-  background-color: var(--clr-prim-2);
-  border-bottom: 2px solid var(--clr-prim-4);
-  color: var(--clr-prim-6);
+  background-color: var(--clr-blue-2);
+  border-bottom: 4px solid var(--clr-blue-4);
+  color: var(--clr-blue-6);
 }
 /* ========================================================================= */
 /* MEDIA QUERY */
@@ -271,7 +272,70 @@ img {
 
 /* Screen size between: 768 - 1024 */
 @media screen and (max-width: 1023px) {
+  .card-message.hero {
+    margin-inline: 1.5rem;
+  }
+  .card-message p {
+    font-size: 3rem;
+  }
+  .card-message a {
+    margin-top: 4rem;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+  }
 }
 /* Screen size between: 0 - 768 */
 @media screen and (max-width: 767px) {
+  .card-message.hero {
+    margin-inline: 1rem;
+  }
+  .card-message p {
+    font-size: 2rem;
+  }
+  .card-message a {
+    padding: 1rem 1.5rem;
+  }
+  .contact-form-wrapper {
+    max-width: 100%;
+    border-radius: unset;
+  }
+  .contact-form div:not(.form-footer) {
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: baseline; */
+    /* margin-block: 1rem; */
+    /* padding-inline: 2rem; */
+    flex-flow: column;
+    align-content: flex-start;
+    padding-inline: 1.5rem;
+  }
+  .contact-form label {
+    /* display: inline-block; */
+    width: unset;
+    margin-bottom: 0.75rem;
+    /* padding-right: 1rem; */
+    text-align: left;
+  }
+  .contact-form input {
+    /* flex-grow: 1; */
+    /* height: 3rem; */
+    /* margin-right: 2rem; */
+    /* padding-left: 1rem; */
+    /* background-color: var(--clr-blue-1); */
+    /* color: var(--clr-blue-8); */
+    /* border: 1px solid var(--clr-blue-4); */
+    /* border-radius: 5px; */
+    /* box-shadow: 0 1px 1px white; */
+    width: 100%;
+  }
+  .contact-form textarea {
+    width: 100%;
+  }
+  .form-footer {
+    justify-content: center;
+  }
+  .form-button {
+    margin-inline: auto;
+  }
 }

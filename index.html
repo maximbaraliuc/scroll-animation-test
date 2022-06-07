@@ -43,15 +43,16 @@
   <div class="contact-form-wrapper" id="contact">
     <h2>Contact Details</h2>
     <!-- <h2> Get in touch with us </h2> -->
-    <form class="contact-form" action="https://formspree.io/patrick.j.reichert@gmail.com" method="POST">
+    <!-- <form class="contact-form" action="https://formspree.io/patrick.j.reichert@gmail.com" method="POST"> -->
+    <form class="contact-form">
       <div class="name">
         <label for="name">Name</label>
-        <input type="text" id="name" required="required" placeholder="John Doe...">
+        <input type="text" id="name" placeholder="John Doe..." required>
       </div>
 
       <div class="email">
         <label for="user_email">Email</label>
-        <input type="email" id="user_email" name="email" required="required" placeholder="you@example.com">
+        <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
       </div>
 
       <div class="phone">
@@ -61,22 +62,21 @@
 
       <div class="subject">
         <label for="subject">Subject</label>
-        <input type="text" id="subject" placeholder="...">
+        <input type="text" id="subject" placeholder="..." required>
       </div>
 
       <div class="contact-message">
         <label for="message">Message</label>
-        <textarea name="message" id="message" placeholder="..."></textarea>
+        <textarea name="message" id="message" placeholder="..." required></textarea>
       </div>
 
       <div class="form-footer">
         <button class="form-button" type="submit">Send</button>
       </div>
-
     </form>
   </div>
 
-  <div style="height: 600px; width: 100%;"></div>
+  <!-- <div style="height: 600px; width: 100%;"></div> -->
 
 </body>
 
