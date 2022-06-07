@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/reset.local.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
   <script src="js/script.js" defer></script>
   <script src="js/scroll-animation.js" type="module"></script>
   <title>Scroll Animation</title>
@@ -18,21 +18,21 @@
   <div class="scroll-tracker"></div>
   <div class="animation-container">
     <div class="animated-card"><img id="scroll-image-01" src="img/landscape-01-1920.jpg"
-        srcset="img/landscape-01-1280.jpg 1280w, img/landscape-01-1920.jpg 1920w, img/landscape-01-2560.jpg 2560w,"
+        srcset="img/landscape-01-1280.jpg 1280w, img/landscape-01-1920.jpg 1920w, img/landscape-01-2560.jpg 2560w"
         sizes="(max-width: 2560px) 100vw, 2560px" alt="top view of a beach with a green shore sand and azure water">
       <div class="card-message hero">
         <p>Explore the world's most beautiful places</p> <a href="#contact">Get in touch with us</a>
       </div>
     </div>
     <div class="animated-card"><img id="scroll-image-02" src="img/landscape-02-1920.jpg"
-        srcset="img/landscape-02-1280.jpg 1280w, img/landscape-02-1920.jpg 1920w, img/landscape-02-2560.jpg 2560w,"
+        srcset="img/landscape-02-1280.jpg 1280w, img/landscape-02-1920.jpg 1920w, img/landscape-02-2560.jpg 2560w"
         sizes="(max-width: 2560px) 100vw, 2560px" alt="a planes wing over the clouds" loading="lazy" decoding="async">
       <div class="card-message simple">
         <p>Discover the world with us</p>
       </div>
     </div>
     <div class="animated-card"><img id="scroll-image-03" src="img/landscape-04-1920.jpg"
-        srcset="img/landscape-04-1280.jpg 1280w, img/landscape-04-1920.jpg 1920w, img/landscape-04-20.jpg 2560w,"
+        srcset="img/landscape-04-1280.jpg 1280w, img/landscape-04-1920.jpg 1920w, img/landscape-04-20.jpg 2560w"
         sizes="(max-width: 2560px) 100vw, 2560px" alt="a settlement close to water" loading="lazy" decoding="async">
       <div class="card-message simple">
         <p>Explore your dream destination</p>
@@ -40,8 +40,8 @@
     </div>
   </div>
 
-  <fieldset class="contact-form-wrapper" id="contact">
-    <legend>Contact Details</legend>
+  <div class="contact-form-wrapper" id="contact">
+    <h2>Contact Details</h2>
     <!-- <h2> Get in touch with us </h2> -->
     <form class="contact-form" action="https://formspree.io/patrick.j.reichert@gmail.com" method="POST">
       <div class="name">
@@ -68,15 +68,15 @@
         <label for="message">Message</label>
         <textarea name="message" id="message"></textarea>
       </div>
-      <button class="form-button" type="submit">Send</button>
-    </form>
-  </fieldset>
 
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+      <div class="form-footer">
+        <button class="form-button" type="submit">Send</button>
+      </div>
+
+    </form>
+  </div>
+
+  <div style="height: 600px; width: 100%;"></div>
 
 </body>
 
