@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap");
+
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  /* font-family: "Merienda", cursive; */
+  font-weight: 700;
+  background-color: hsl(200, 53%, 16%);
+  color: white;
+}
+.scroll-tracker {
+  position: fixed;
+  inset: 0 0 auto;
+  height: 5px;
+  background-color: white;
+  transform-origin: left;
+  z-index: 1;
+}
+.animation-container {
+  /* position: relative; */
+  margin-bottom: 5rem;
+}
+
+/* set a height  */
+
+.animated-card:not(:last-of-type) {
+  height: 60vw;
+}
+.animated-card {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  border: 2px dotted crimson;
+}
+img {
+  /* opacity: 0.6; */
+  width: 100%;
+}
+/* ====================================================== */
+.card-message {
+  position: absolute;
+  align-self: center;
+  padding: 2rem;
+  font-family: "Merienda", cursive;
+
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+.card-message.hero {
+  top: 40vh;
+  margin-inline: 2rem;
+  padding: 2rem 4rem;
+  background-color: hsla(187, 84%, 15%, 0.3);
+  border-radius: 15px;
+}
+.card-message.hero p {
+  font-size: 4rem;
+  text-shadow: 3px 3px 10px black;
+}
+
+.card-message.simple {
+  top: 60vh;
+  padding: 3rem 5rem;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  /* border: 1px solid white; */
+  border-radius: 10px;
+  font-size: 4rem;
+  text-shadow: 3px 3px 10px hsla(225, 38%, 16%, 0.8);
+}
+
+.card-message:hover {
+  /* box-shadow: inset 0 0 20px hsla(187, 84%, 15%, 0.6); */
+}
+.card-message.show {
+  /* margin-left: 5rem; */
+  /* opacity: 1; */
+}
+
+.card-message a {
+  display: inline-block;
+  margin-top: 5rem;
+  padding: 1.2rem 3rem;
+  /* border: 1px solid white; */
+  border-radius: 10px;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  color: hsl(203, 37%, 34%);
+  font-size: 2rem;
+  text-decoration: none;
+  box-shadow: 3px 3px 10px hsla(0, 0%, 0%, 0.5);
+}
+.card-message a:hover {
+  background-color: white;
+  box-shadow: 3px 3px 10px hsl(0, 0%, 0%);
+}
+.card-message a:active {
+  background-color: hsl(178, 100%, 25%);
+  color: white;
+}
+
+#scroll-image-02 {
+  mask-image: url(../img/lanscape-02-alpha.png);
+  -webkit-mask-image: url(../img/lanscape-02-alpha.png);
+  mask-size: 100%;
+  -webkit-mask-size: 100%;
+}
+#scroll-image-03 {
+  mask-image: url(../img/lanscape-04-alpha.png);
+  -webkit-mask-image: url(../img/lanscape-04-alpha.png);
+  mask-size: 100%;
+  -webkit-mask-size: 100%;
+}
+
+/* Media query for vertical aspect ratio  */
+@media (max-aspect-ratio: 1/1) {
+  .animated-card:not(:last-of-type) {
+    height: 80vh;
+  }
+  .animated-card {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    overflow-x: clip;
+    overflow-y: visible;
+  }
+
+  img {
+    width: unset;
+    height: 130vh;
+    flex-shrink: 1;
+  }
+}
+
+/* ========================================================================= */
+/* MEDIA QUERY */
+/* ========================================================================= */
+
+/* Screen size between: 1024 - 1366 */
+@media screen and (max-width: 1365px) {
+}
+
+/* Screen size between: 768 - 1024 */
+@media screen and (max-width: 1023px) {
+}
+/* Screen size between: 0 - 768 */
+@media screen and (max-width: 767px) {
+}
