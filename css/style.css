@@ -167,7 +167,7 @@ img {
 .contact-form-wrapper {
   max-width: 700px;
   margin: 1rem auto;
-  border: 1px solid var(--clr-blue-8);
+  border: 1px solid var(--clr-prim-8);
   border-radius: 7px;
   box-shadow: 0 5px 5px hsla(206, 24%, 11%, 0.5);
   overflow: hidden;
@@ -175,9 +175,9 @@ img {
 .contact-form-wrapper h2 {
   width: 100%;
   padding-block: 2rem;
-  background-color: var(--clr-blue-3);
-  color: var(--clr-blue-8);
-  border-bottom: 1px solid var(--clr-blue-4);
+  background-color: var(--clr-prim-3);
+  color: var(--clr-prim-8);
+  border-bottom: 1px solid var(--clr-prim-4);
   text-align: center;
   font-size: 1.2rem;
 }
@@ -186,8 +186,8 @@ img {
   display: flex;
   flex-flow: column;
   padding-top: 1.5rem;
-  background-color: var(--clr-blue-2);
-  color: var(--clr-blue-8);
+  background-color: var(--clr-prim-2);
+  color: var(--clr-prim-8);
 }
 
 .contact-form div:not(.form-footer) {
@@ -206,9 +206,9 @@ img {
   height: 3rem;
   margin-right: 2rem;
   padding-left: 1rem;
-  background-color: var(--clr-blue-1);
-  color: var(--clr-blue-8);
-  border: 1px solid var(--clr-blue-4);
+  background-color: var(--clr-prim-1);
+  color: var(--clr-prim-8);
+  border: 1px solid var(--clr-prim-4);
   border-radius: 5px;
 }
 .contact-form textarea {
@@ -216,9 +216,9 @@ img {
   height: 150px;
   margin-right: 2rem;
   padding: 1rem;
-  background-color: var(--clr-blue-1);
-  color: var(--clr-blue-8);
-  border: 1px solid var(--clr-blue-4);
+  background-color: var(--clr-prim-1);
+  color: var(--clr-prim-8);
+  border: 1px solid var(--clr-prim-4);
   border-radius: 5px;
 }
 
@@ -239,27 +239,27 @@ img {
   justify-content: center;
   width: 100%;
   margin-top: 1.5rem;
-  background-color: var(--clr-blue-3);
-  border-top: 1px solid var(--clr-blue-4);
+  background-color: var(--clr-prim-3);
+  border-top: 1px solid var(--clr-prim-4);
 }
 
 .form-button {
   margin: 1.5rem;
   padding: 0.75rem 4rem;
-  border-bottom: 2px solid var(--clr-blue-8);
+  border-bottom: 2px solid var(--clr-prim-8);
   border-radius: 5px;
-  background-color: var(--clr-blue-6);
-  color: var(--clr-blue-1);
+  background-color: var(--clr-prim-6);
+  color: var(--clr-prim-1);
   transition: all 0.2s;
 }
 .form-button:hover {
-  background-color: var(--clr-blue-7);
-  border-bottom: 2px solid var(--clr-blue-9);
+  background-color: var(--clr-prim-7);
+  border-bottom: 2px solid var(--clr-prim-9);
 }
 .form-button:active {
-  background-color: var(--clr-blue-2);
-  border-bottom: 2px solid var(--clr-blue-4);
-  color: var(--clr-blue-6);
+  background-color: var(--clr-prim-2);
+  border-bottom: 2px solid var(--clr-prim-4);
+  color: var(--clr-prim-6);
 }
 /* ========================================================================= */
 /* MEDIA QUERY */
