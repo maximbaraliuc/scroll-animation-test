@@ -81,7 +81,7 @@ scrollTracker.animate(
 // IntersectionObserver
 // ----------------------------------------------------------------------------
 
-/* const messages = document.querySelectorAll(".card-message");
+const messages = document.querySelectorAll(".card-message");
 
 const observer = new IntersectionObserver(
   (entries) => {
@@ -95,4 +95,4 @@ const observer = new IntersectionObserver(
 
 messages.forEach((card) => {
   observer.observe(card);
-}); */
+});

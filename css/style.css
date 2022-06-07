@@ -46,8 +46,9 @@ img {
   align-self: center;
   padding: 2rem;
   font-family: "Merienda", cursive;
-
   text-align: center;
+  opacity: 0;
+  transform: translateY(-50px);
   transition: all 0.5s ease-in-out;
 }
 .card-message.hero {
@@ -76,8 +77,8 @@ img {
   /* box-shadow: inset 0 0 20px hsla(187, 84%, 15%, 0.6); */
 }
 .card-message.show {
-  /* margin-left: 5rem; */
-  /* opacity: 1; */
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 .card-message a {
