@@ -3,9 +3,9 @@
 import "https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js";
 
 // ----------------------------------------------------------------------------
-// scroll animation setup
+// ANCHOR Scroll Animation Setup
 // ----------------------------------------------------------------------------
-// animated cards
+// ANCHOR Animated Cards
 // ----------------------------------------------------------------------------
 
 const animatedCards = document.querySelectorAll(".animated-card");
@@ -63,7 +63,7 @@ window.addEventListener("resize", animateCards);
 window.onload = animateCards;
 
 // ----------------------------------------------------------------------------
-// scroll tracker
+// ANCHOR Scroll Tracker
 // ----------------------------------------------------------------------------
 
 let scrollTracker = document.querySelector(".scroll-tracker");
@@ -78,7 +78,7 @@ scrollTracker.animate(
 );
 
 // ----------------------------------------------------------------------------
-// IntersectionObserver
+// ANCHOR IntersectionObserver
 // ----------------------------------------------------------------------------
 
 const messages = document.querySelectorAll(".card-message");
@@ -98,5 +98,6 @@ messages.forEach((card) => {
 });
 
 // ----------------------------------------------------------------------------
-// Set scroll offset for the body because the element heights are changing.
+// ANCHOR Scroll Offset
+// For the body because the element heights are changing.
 // ----------------------------------------------------------------------------
